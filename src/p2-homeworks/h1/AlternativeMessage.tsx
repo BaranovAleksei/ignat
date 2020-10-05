@@ -1,9 +1,23 @@
 import React from "react";
+import s from './AlternativeMessage.module.css';
 
-function AlternativeMessage() {
+type MessageType = {
+    avatar: string
+    name: string
+    message: string
+    time: string
+}
+
+function AlternativeMessage(props:MessageType) {
     return (
-        <div>
+        <div className={s.message}>
 
+            <div className={s.bodyMes}>
+                <h5>{props.name}</h5>
+                <p>{props.message}</p>
+                <span>{props.time}</span>
+            </div>
+            <img src={props.avatar} alt=""/>
         </div>
     );
 }
