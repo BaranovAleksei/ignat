@@ -1,7 +1,18 @@
-.someClass {
-
+.error {
+	border: 1px solid red;
+}
+.overlayGreeting {
+	position: relative;
 }
 
-.error {
-    border: 1px solid red;
+.ErrorNameInput {
+	color: red;
+	background: #B6CAB1;
+	position: absolute;
+	top: 1.4em;
+	left: 0;
+}
+
+.opacity {
+	opacity: 30%;
 }
