@@ -11,6 +11,7 @@ type SuperInputTextPropsType = DefaultInputPropsType & { // и + ещё проп
     onEnter?: () => void
     error?: string
     spanClassName?: string
+    inputClassName?: string
 };
 
 const SuperInputText: React.FC<SuperInputTextPropsType> = (
@@ -19,7 +20,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         onChange, onChangeText,
         onKeyPress, onEnter,
         error,
-        className, spanClassName,
+        className, spanClassName, inputClassName,
 
         ...restProps// все остальные пропсы попадут в объект restProps
     }
@@ -38,21 +39,24 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         && onEnter(); // то вызвать его
     }
 
-    const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ""}`;
-    const finalInputClassName = `${s.errorInput} ${className}`; // need to fix with (?:) and s.superInput
+    const finalSpanClassName = `${s.error} ${ spanClassName ? spanClassName : ''}`;
+
+    const finalInputClassName = `${s.errorInput} ${ className ? className : ''}`; // need to fix with (?:) and s.superInput
 
     return (
-        <>
+        <div className={s.overlayInput}>
             <input
+                placeholder = {'enter your text'}
                 type={"text"}
                 onChange={onChangeCallback}
                 onKeyPress={onKeyPressCallback}
-                className={finalInputClassName}
+                className={ finalInputClassName }
 
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
-            {error && <span className={finalSpanClassName}>{error}</span>}
-        </>
+            { error && <span className={finalSpanClassName}> { error } </span> }
+        </div>
+
     );
 }
 

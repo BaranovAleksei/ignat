@@ -1,5 +1,6 @@
 import React, {ChangeEvent, KeyboardEvent} from "react";
 import s from "./Greeting.module.css";
+import SuperInputText from "../h4/common/c1-SuperInputText/SuperInputText";
 
 type GreetingPropsType = {
   name: string // need to fix any
@@ -16,11 +17,13 @@ const Greeting: React.FC<GreetingPropsType> = ({name, setNameCallback, addUser, 
 
   return (
     <div className={s.overlayGreeting}>
-      <input
-        value={name}
-        onChange={setNameCallback}
-        className={inputClass}
-      />
+      {/*<input*/}
+      {/*  value={name}*/}
+      {/*  onChange={setNameCallback}*/}
+      {/*  className={inputClass}*/}
+      {/*/>*/}
+
+
 
       <button
               onClick={addUser}> add

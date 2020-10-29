@@ -1,12 +1,27 @@
-.superInput {
-
+.overlayInput {
+	position: relative;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+	color: #3a33d1;
+	font-size: 1.2em;
+	border: 2px solid #3a33d1;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin: 10px 0;
+	outline: #3a33d1;
 }
 
-.error {
-    color: red;
+.errorInput::placeholder {
+	color: #3a33d1;
+	opacity: 0.4;
+}
+
+span.error {
+	display: block;
+	width: 100%;
+	color: red;
+  position: absolute;
+	top: -1.4em;
+	text-align: center;
 }
