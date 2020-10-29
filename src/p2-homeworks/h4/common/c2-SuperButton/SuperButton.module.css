@@ -1,7 +1,26 @@
 .default {
-
+    color: #3a33d1;
+    font-size: 1.2em;
+    border: 2px solid #3a33d1;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    outline: #3a33d1;
+    background: #ffffff;
+    transition: .3s linear;
+}
+.default:nth-child(2):hover {
+    cursor: pointer;
+    box-shadow: 2px 2px white, 4px 4px #3a33d1;
+    top: -4px;
+    left: -4px;
 }
 
 .red {
-    background: red;
+    color: red;
+    border: 2px solid red;
+    background: #ffffff;
+}
+.red:nth-child(2):hover {
+    box-shadow: 2px 2px white, 4px 4px red;
 }
