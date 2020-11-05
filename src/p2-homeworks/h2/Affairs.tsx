@@ -2,6 +2,7 @@ import React from "react";
 import Affair from "./Affair";
 import {AffairType, FilterType} from "./HW2";
 import s from './Affairs.module.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 
 export type AffairsPropsType = { // need to fix any
@@ -30,10 +31,10 @@ function Affairs(props: AffairsPropsType) {
         {mappedAffairs}
       </div>
       <div className={s.overlayButton}>
-        <button onClick={ setAll }><span>All</span></button>
-        <button onClick={ setHigh }><span>High</span></button>
-        <button onClick={ setMiddle }><span>Middle</span></button>
-        <button onClick={ setLow }><span>Low</span></button>
+        <SuperButton onClick={ setAll }>All</SuperButton>
+        <SuperButton onClick={ setHigh }>High</SuperButton>
+        <SuperButton onClick={ setMiddle }>Middle</SuperButton>
+        <SuperButton onClick={ setLow }>Low</SuperButton>
       </div>
     </div>
   );

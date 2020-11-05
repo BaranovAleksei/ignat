@@ -33,7 +33,7 @@ function HW4() {
                     onChangeText = { setText }
                     onEnter = { showAlert }
                     error = { error }
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                    // className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
 
                 {/*should work (должно работать)*/}
@@ -45,17 +45,18 @@ function HW4() {
                 </SuperButton>
 
                 {/*should work (должно работать)*/}
+
                 <SuperCheckbox
                     checked={checked}
                     onChangeChecked={setChecked}
                 >
-                    some text {/*// этот текст попадёт в children*/}
+                    some text { /*// этот текст попадёт в children*/ }
                 </SuperCheckbox>
 
                 {/*// onChange тоже должен работать*/}
                 <SuperCheckbox
                   checked={checked}
-                  onChange={testOnChange}
+                  onChange = {testOnChange}
                 />
             </div>
 
