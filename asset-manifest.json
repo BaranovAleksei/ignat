@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/BaranovAleksei/ignat/static/css/main.39e71ead.chunk.css",
-    "main.js": "/BaranovAleksei/ignat/static/js/main.9a6fa677.chunk.js",
-    "main.js.map": "/BaranovAleksei/ignat/static/js/main.9a6fa677.chunk.js.map",
-    "runtime-main.js": "/BaranovAleksei/ignat/static/js/runtime-main.32472923.js",
-    "runtime-main.js.map": "/BaranovAleksei/ignat/static/js/runtime-main.32472923.js.map",
-    "static/js/2.490fbe74.chunk.js": "/BaranovAleksei/ignat/static/js/2.490fbe74.chunk.js",
-    "static/js/2.490fbe74.chunk.js.map": "/BaranovAleksei/ignat/static/js/2.490fbe74.chunk.js.map",
+    "main.css": "/BaranovAleksei/ignat/static/css/main.0089c427.chunk.css",
+    "main.js": "/BaranovAleksei/ignat/static/js/main.d4669f9d.chunk.js",
+    "main.js.map": "/BaranovAleksei/ignat/static/js/main.d4669f9d.chunk.js.map",
+    "runtime-main.js": "/BaranovAleksei/ignat/static/js/runtime-main.861cefb0.js",
+    "runtime-main.js.map": "/BaranovAleksei/ignat/static/js/runtime-main.861cefb0.js.map",
+    "static/js/2.bd5aace3.chunk.js": "/BaranovAleksei/ignat/static/js/2.bd5aace3.chunk.js",
+    "static/js/2.bd5aace3.chunk.js.map": "/BaranovAleksei/ignat/static/js/2.bd5aace3.chunk.js.map",
     "index.html": "/BaranovAleksei/ignat/index.html",
-    "precache-manifest.8530d68e4e4077008d836a09af8a4975.js": "/BaranovAleksei/ignat/precache-manifest.8530d68e4e4077008d836a09af8a4975.js",
+    "precache-manifest.13b1aafef3a65a7a5656261c6c6e1185.js": "/BaranovAleksei/ignat/precache-manifest.13b1aafef3a65a7a5656261c6c6e1185.js",
     "service-worker.js": "/BaranovAleksei/ignat/service-worker.js",
-    "static/css/main.39e71ead.chunk.css.map": "/BaranovAleksei/ignat/static/css/main.39e71ead.chunk.css.map",
-    "static/js/2.490fbe74.chunk.js.LICENSE.txt": "/BaranovAleksei/ignat/static/js/2.490fbe74.chunk.js.LICENSE.txt"
+    "static/css/main.0089c427.chunk.css.map": "/BaranovAleksei/ignat/static/css/main.0089c427.chunk.css.map",
+    "static/js/2.bd5aace3.chunk.js.LICENSE.txt": "/BaranovAleksei/ignat/static/js/2.bd5aace3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.32472923.js",
-    "static/js/2.490fbe74.chunk.js",
-    "static/css/main.39e71ead.chunk.css",
-    "static/js/main.9a6fa677.chunk.js"
+    "static/js/runtime-main.861cefb0.js",
+    "static/js/2.bd5aace3.chunk.js",
+    "static/css/main.0089c427.chunk.css",
+    "static/js/main.d4669f9d.chunk.js"
   ]
 }
