@@ -1,6 +1,7 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 import s from './Header.module.sass'
+import { PATH } from './Routes'
 
 function Header() {
     return (
@@ -8,13 +9,13 @@ function Header() {
           <button className={ s.menuHover }>Меню</button>
           <div className={s.items}>
             <div className={ s.item }>
-              <NavLink to='/pre-junior' activeClassName = { s.activeLink }>PreJunior</NavLink>
+              <NavLink to= { PATH.PRE_JUNIOR } activeClassName = { s.activeLink }>PreJunior</NavLink>
             </div>
             <div className={ s.item }>
-              <NavLink to='/junior' activeClassName = { s.activeLink }>Junior</NavLink>
+              <NavLink to={ PATH.JUNIOR } activeClassName = { s.activeLink }>Junior</NavLink>
             </div>
             <div className={ s.item }>
-              <NavLink to='/junior-plus' activeClassName = { s.activeLink }>JuniorPlus</NavLink>
+              <NavLink to={ PATH.JUNIOR_PLUS } activeClassName = { s.activeLink }>JuniorPlus</NavLink>
             </div>
           </div>
         </div>

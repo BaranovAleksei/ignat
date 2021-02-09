@@ -1,14 +1,12 @@
-
 .default {
-    box-shadow: 0px 10px 14px -7px #276873;
-    background: linear-gradient(to bottom, #599bb3 5%, #61868c 100%);
-    background-color: #599bb3;
+    /*box-shadow: 0px 10px 14px -7px #276873;*/
+    background-color: #4caf50;
     border-radius: 5px;
-    border: 1px solid #29668f;
+    border: 1px solid #4caf50;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Verdana;
+    /*font-family: Verdana;*/
     font-size: 1em;
     font-weight: bold;
     padding: 5px 10px;
@@ -21,9 +19,9 @@
 }
 
 .default:hover {
-    background: linear-gradient(to bottom, #61868c 5%, #599bb3 100%);
-    background-color: #61868c;
+    background: linear-gradient(to bottom, #4caf50 10%, #599bb3 100%);
     border: 1px solid #29668f;
+    box-shadow: 0px 10px 14px -7px #276873;
 }
 .default:active {
     position: relative;
