@@ -8,9 +8,9 @@ function Junior() {
 	return (
 		<div>
 			<HW8/>
-			<HW9/>
-			<HW10/>
-			<HW11/>
+			{/*<HW9/>*/}
+			{/*<HW10/>*/}
+			{/*<HW11/>*/}
 		</div>
 	);
 }

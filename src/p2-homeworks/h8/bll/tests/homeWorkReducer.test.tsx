@@ -1,7 +1,7 @@
 import React from 'react';
-import {homeWorkReducer} from "../homeWorkReducer";
+import {homeWorkReducer, ItemType} from "../homeWorkReducer";
 
-let initialState: any[];
+let initialState: Array<ItemType> = [];
 
 beforeEach(() => {
     initialState = [
@@ -15,18 +15,30 @@ beforeEach(() => {
 });
 
 test("sort name up", () => {
-    const newState = homeWorkReducer(initialState, {type: "sort", payload: "up"});
 
-    console.log(newState);
-    // expect(...).toBe(...);
+    const newState = homeWorkReducer(initialState, {type: "SORT", payload: "up"});
+
+    // console.log(newState);
+    expect(newState[0].name).toBe('Александр');
+    expect(newState[5].name).toBe('Кот');
+    expect(newState.length).toBe(6);
 });
+
 test("sort name down", () => {
-    const newState = homeWorkReducer(initialState, {type: "sort", payload: "down"});
+    const newState = homeWorkReducer(initialState, {type: "SORT", payload: "down"});
 
-
+    expect(newState.length).toBe(6);
+    expect(newState[5].name).toBe('Александр');
+    expect(newState[0].name).toBe('Кот');
 });
+
 test("check age 18", () => {
-    const newState = homeWorkReducer(initialState, {type: "check", payload: 18});
+    const newState = homeWorkReducer(initialState, {type: "CHECK", payload: 18});
 
-
+    expect(newState).toEqual([
+        {id: 1, name: "Александр", age: 66},
+        {id: 3, name: "Виктор", age: 44},
+        {id: 4, name: "Дмитрий", age: 40},
+        {id: 5, name: "Ирина", age: 55}
+    ]);
 });
