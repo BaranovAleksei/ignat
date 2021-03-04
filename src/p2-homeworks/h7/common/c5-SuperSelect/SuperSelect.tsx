@@ -1,30 +1,39 @@
-import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent} from "react";
+import React, {SelectHTMLAttributes, DetailedHTMLProps, ChangeEvent} from "react"
+import s from './SuperSelect.module.sass'
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
-    options?: any[]
-    onChangeOption?: (option: any) => void
+    options: Array<string>
+    onChangeOption: (option: string) => void
 }
+
 
 const SuperSelect: React.FC<SuperSelectPropsType> = (
     {
         options,
-        onChange, onChangeOption,
+        onChange,
+        onChangeOption,
         ...restProps
     }
 ) => {
-    const mappedOptions: any[] = []; // map options with key
+    const mappedOptions: any[] = [
+      options.map( (options, index) => <option key={index}> {options} </option>)
+    ]; // map options with key
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        // onChange, onChangeOption
+      const value = e.currentTarget.value
+      onChangeOption(value)
     }
 
     return (
-        <select onChange={onChangeCallback} {...restProps}>
+        <div className={s.selectOverlay}>
+          <select  onChange={onChangeCallback} {...restProps}>
             {mappedOptions}
-        </select>
-    );
+          </select>
+        </div>
+
+    )
 }
 
 export default SuperSelect;
